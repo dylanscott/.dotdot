@@ -1,0 +1,7 @@
+\.git
+\.gitignore
+\.gitmodules
+
+\.\#.+ # emacs lock files
+.+~    # emacs backup files
+\#.*\# # emacs autosave files

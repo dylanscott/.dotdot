@@ -37,3 +37,11 @@ zplug "modules/directory", from:prezto
 zplug "modules/osx", from:prezto
 zplug "jeffreytse/zsh-vi-mode"
 zplug load
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
+
+# pipx
+export PATH="$PATH:/Users/dylanscott/.local/bin"

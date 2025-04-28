@@ -1,0 +1,6 @@
+[submodule ".zprezto"]
+	path = .zprezto
+	url = https://github.com/sorin-ionescu/prezto.git
+[submodule ".zplug"]
+	path = .zplug
+	url = https://github.com/zplug/zplug.git

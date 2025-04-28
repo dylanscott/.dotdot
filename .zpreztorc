@@ -1,5 +1,3 @@
-zstyle ':prezto:*:*' color 'yes'
-
 zstyle ':prezto:load' pmodule \
   'environment' \
   'terminal' \
@@ -9,9 +7,13 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
+  'syntax-highlighting' \
   'history-substring-search' \
+  'autosuggestions' \
   'prompt'
 
 zstyle ':prezto:module:editor' key-bindings 'vi'
-
+zstyle ':prezto:module:syntax-highlighting' color 'yes'
+zstyle ':prezto:module:autosuggestions' color 'yes'
+zstyle ':prezto:module:autosuggestions:color' found ''
 zstyle ':prezto:module:prompt' theme 'agnoster'

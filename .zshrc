@@ -13,8 +13,10 @@ export HOMEBREW_NO_INSTALL_UPGRADE=1
 
 eval "$(scmpuff init --shell=zsh --aliases=false)"
 
+source ~/.zshfuncs
+
 # aliases
-alias gs="scmpuff status"
+alias gs="scmpuff_status"
 alias ga="git add"
 alias gap="git add -p"
 alias gc="git commit"

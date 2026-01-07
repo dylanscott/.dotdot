@@ -8,9 +8,6 @@ setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_FIND_NO_DUPS
 setopt HIST_REDUCE_BLANKS
 
-export HOMEBREW_NO_AUTO_UPDATE=1
-export HOMEBREW_NO_INSTALL_UPGRADE=1
-
 eval "$(scmpuff init --shell=zsh --aliases=false)"
 
 source ~/.zshfuncs
@@ -39,11 +36,3 @@ zplug "modules/directory", from:prezto
 zplug "modules/osx", from:prezto
 zplug "jeffreytse/zsh-vi-mode"
 zplug load
-
-# pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - zsh)"
-
-# pipx
-export PATH="$PATH:/Users/dylanscott/.local/bin"

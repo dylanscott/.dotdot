@@ -8,6 +8,8 @@ setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_FIND_NO_DUPS
 setopt HIST_REDUCE_BLANKS
 
+bindkey "^R" history-incremental-search-backward
+
 eval "$(scmpuff init --shell=zsh --aliases=false)"
 
 source ~/.zshfuncs

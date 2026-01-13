@@ -38,3 +38,7 @@ zplug "modules/directory", from:prezto
 zplug "modules/osx", from:prezto
 zplug "jeffreytse/zsh-vi-mode"
 zplug load
+
+# https://codeberg.org/akib/emacs-eat
+[ -n "$EAT_SHELL_INTEGRATION_DIR" ] && \
+  source "$EAT_SHELL_INTEGRATION_DIR/zsh"

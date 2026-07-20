@@ -1,3 +1,6 @@
+# path
+export PATH="$HOME/.local/bin:$PATH"
+
 # prezto
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
